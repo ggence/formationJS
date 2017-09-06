@@ -8,26 +8,26 @@ console.log(v)
 
 
 function direBonjour() {
-  console.log("Bonjour");
+    console.log("Bonjour");
 }
 
 
-function Eleve(prenom,nom) {
+function Eleve(prenom, nom) {
     this.prenom = prenom;
     this.nom = nom
-    this.salutation = function () {
-      console.log("Bonjour je suis "+ this.prenom + " " + this.nom);
+    this.salutation = function() {
+        console.log("Bonjour je suis " + this.prenom + " " + this.nom);
     }
 }
 
-var eleve1 = new Eleve("Bob","DYLAN");
+var eleve1 = new Eleve("Bob", "DYLAN");
 eleve1.salutation();
 
 var ajd = new Date();
 console.log(ajd);
 
 "5" == 5
-"5" === 5
+    "5" === 5
 
 if (true || false) {
 
@@ -37,18 +37,18 @@ if (true || false) {
 
 var expression = "a";
 switch (expression) {
-  case expression === "a":
-  case expression === "b":
+    case expression === "a":
+    case expression === "b":
 
-    break;
-  case expression === "c":
-  default:
+        break;
+    case expression === "c":
+    default:
 
 }
 
 var array = []
 for (var i = 0; i < 10; i++) {
-  array[i] = Math.random();
+    array[i] = Math.random();
 }
 
 console.log(array);
