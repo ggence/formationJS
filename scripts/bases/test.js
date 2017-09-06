@@ -37,11 +37,11 @@ if (true || false) {
 
 var expression = "a";
 switch (expression) {
-  case expression === "a":
-  case expression === "b":
+  case "a":
+  case "b":
 
     break;
-  case expression === "c":
+  case "c":
   default:
 
 }
