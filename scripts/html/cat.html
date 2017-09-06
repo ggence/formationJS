@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Le chat</title>
   </head>
-  
+
 
   <body>
     <p>
@@ -62,18 +62,18 @@
     </iframe> -->
 
   </body>
-  
+
 
   <script type="text/javascript">
     console.log("Bienvenu dans la console du navigateur !");
-    document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
+    document.write("<p>J'ajoute un paragraphe</p>");
 
-    var myWindow = window.open("", "MsgWindow", "width=200, height=1  00");
-    myWindow.document.write("<p>This is 'MsgWindow'. I am 200px wide and 100px tall!</p>");
+    var myWindow = window.open("", "Nouvelle fenetre", "width=200, height=1  00");
+    myWindow.document.write("<p>Je suis un pop up ! Lourd !</p>");
   </script>
 
   <script type="text/javascript">
-    
+
     document.getElementById("entree").onkeyup = function () {
       var texte = document.getElementById("entree").value;
       document.getElementById("affichage").innerHTML = texte;
@@ -81,8 +81,8 @@
   </script>
 
 
-  
+
   <script src="../bases/test.js" charset="utf-8"></script>
 
-  
+
 </html>
