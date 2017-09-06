@@ -32,7 +32,6 @@ switch (expression) {
 
 }
 
-
 setTimeout( direBonjour, 10000);
 
 setInterval( function () { console.log("Je reviens dans 3 secondes") }, 3000);
