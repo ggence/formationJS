@@ -49,14 +49,14 @@ setInterval(
 
 function Eleve(prenom, nom) {
 
-    this.chanter = function (argument) {
+    var chanter = function (argument) {
       console.log("joijoi");
     }
 
     this.prenom = prenom;
     this.nom = nom;
     this.salutation = function() {
-        this.chanter();
+        chanter();
         console.log("Bonjour je suis " + this.prenom + " " + this.nom);
     }
 }
