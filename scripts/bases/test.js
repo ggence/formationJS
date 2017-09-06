@@ -9,11 +9,9 @@ console.log(v)
 
 
 function direBonjour(toto) {
-    
     return function () {
       console.log("Bonjour" + toto);
     }
-    
 }
 
 var test1 = "5" == 5;
@@ -41,9 +39,9 @@ switch (expression) {
 
 setTimeout( direBonjour("bob"), 10000);
 
-setInterval( 
-  function () { 
-    console.log("Je reviens dans 3 secondes"); 
+setInterval(
+  function () {
+    console.log("Je reviens dans 3 secondes");
   }, 3000);
 
 
@@ -79,4 +77,3 @@ for (var i = 0; i < 10; i++) {
 array.forEach(function (a,b) {
   console.log(a,b);
 });
-

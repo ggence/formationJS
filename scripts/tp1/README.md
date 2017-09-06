@@ -1,18 +1,35 @@
 # TP1: Découverte du langage
 
-### Avec NodeJS (Serveur)
-- Ecrire une fonction **puissance2** qui affiche et retourne le nombre d'entrée à la puissance 2 si le nombre est pair.
-- Créer un objet **voiture** qui a un attribut publique *nbRoues* et 2 méthodes publiques *avancer* et *reculer* qui affiche un message différents dans la console.
-- Importer le module **module** (avec require/npm ?), afficher toute ces méthodes dans la console;
-- Utiliser la méthode *.methode* du **module** qui prend en argument un callback
-- Lire le fichier */etc/group*  avec **fs.readFile** et afficher le résultat dans la console. (require + callback avec arguments)
+### JavaScript avec NodeJS
+1. Ecrire une fonction **puissance2** qui affiche et retourne le nombre d'entrée à la puissance 2 si le nombre est pair, sinon affiche et retourne le nombre entré en paramétre.
+2. Ecrire un constructeur de **Espece** qui a un attribut publique ***.nbPattes*** et 2 méthodes publiques ***.marcher*** et ***.voler***, les méthodes doivent afficher un message différent dans la console et ne rien retourner.
+3. Instancier **Espece** et ecrire une fonction (non méthode) qui change le nbPattes de l'instance.
+4. Importer le module **lbbePrabi** puis afficher l'objet dans la console;
+5. Utiliser la méthode ***.creerServeur*** du **lbbePrabi** qui prend en argument un callback;
+6. Faire une requete HTTP sur le port 8080 de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost)
+7. Lire le fichier */etc/group*  avec **fs.readFile**, afficher l'erreur si il y en a une sinon afficher le résultat dans la console.
 
-### Avec le navigateur (Client)
+### JavaScript avec le navigateur
 
 #### Liens utiles
 
 A FAIRE:
 Exemple de require et de callback avec argument
 
+#### Annexe:
+**installer un paquet distant avec npm**
+```shell
+#shell
+npm install nom_du_paquet
+```
+
+*NodeJs fournit plusieurs module par défault tel que http, net, process ou encore fs (voir [doc](https://nodejs.org/dist/latest-v6.x/docs/api/)).*
+*Pour les utiliser nul besoin de npm*
+
+**Utiliser un module dans un fichier NodeJs**
+```javascript
+//javascript
+const http = require('http');
+```
 
 Idée: faire des tests
