@@ -1,3 +1,4 @@
+
 var a;
 a = "bob";
 a += a;
@@ -7,8 +8,12 @@ var v;
 console.log(v)
 
 
-function direBonjour() {
-    console.log("Bonjour");
+function direBonjour(toto) {
+    
+    return function () {
+      console.log("Bonjour" + toto);
+    }
+    
 }
 
 var test1 = "5" == 5;
@@ -25,35 +30,53 @@ var expression = "a";
 switch (expression) {
   case "a":
   case "b":
-
+    console.log("c'est bien a ou b");
     break;
   case "c":
+    console.log("c");
   default:
+    console.log("default");
 
 }
 
-setTimeout( direBonjour, 10000);
+setTimeout( direBonjour("bob"), 10000);
 
-setInterval( function () { console.log("Je reviens dans 3 secondes") }, 3000);
+setInterval( 
+  function () { 
+    console.log("Je reviens dans 3 secondes"); 
+  }, 3000);
+
 
 function Eleve(prenom, nom) {
+
+    this.chanter = function (argument) {
+      console.log("joijoi");
+    }
+
     this.prenom = prenom;
-    this.nom = nom
+    this.nom = nom;
     this.salutation = function() {
+        this.chanter();
         console.log("Bonjour je suis " + this.prenom + " " + this.nom);
     }
 }
 
 var eleve1 = new Eleve("Bob", "DYLAN");
 eleve1.salutation();
+eleve1.chanter();
+
+console.log(eleve1)
 
 var ajd = new Date();
-console.log(ajd);
+console.log(ajd.toGMTString());
+
 
 var array = []
 for (var i = 0; i < 10; i++) {
-  //array[i] = Math.random();
   array.push(Math.random());
 }
 
-console.log(array);
+array.forEach(function (a,b) {
+  console.log(a,b);
+});
+
