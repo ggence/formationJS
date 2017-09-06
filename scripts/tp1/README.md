@@ -11,10 +11,7 @@
 
 ### JavaScript avec le navigateur
 
-#### Liens utiles
-
-A FAIRE:
-Exemple de require et de callback avec argument
+//TODO
 
 #### Annexe:
 **installer un paquet distant avec npm**
