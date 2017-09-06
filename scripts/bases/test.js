@@ -37,18 +37,19 @@ if (true || false) {
 
 var expression = "a";
 switch (expression) {
-    case expression === "a":
-    case expression === "b":
+  case "a":
+  case "b":
 
-        break;
-    case expression === "c":
-    default:
+    break;
+  case "c":
+  default:
 
 }
 
 var array = []
 for (var i = 0; i < 10; i++) {
-    array[i] = Math.random();
+  //array[i] = Math.random();
+  array.push(Math.random());
 }
 
 console.log(array);
