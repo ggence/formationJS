@@ -48,7 +48,8 @@ switch (expression) {
 
 var array = []
 for (var i = 0; i < 10; i++) {
-  array[i] = Math.random();
+  //array[i] = Math.random();
+  array.push(Math.random());
 }
 
 console.log(array);
