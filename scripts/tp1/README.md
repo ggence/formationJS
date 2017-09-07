@@ -2,25 +2,33 @@
 
 ### JavaScript avec NodeJS
 
-
+*Dans un fichier test.js*
 
 1. Ecrire une fonction **puissance2** qui affiche et retourne le nombre d'entrée à la puissance 2 si le nombre est pair, sinon affiche et retourne le nombre entré en paramétre.
 2. Ecrire un constructeur de **Espece** qui a un attribut publique ***.nbPattes*** (number) et 2 méthodes publiques ***.marcher*** et ***.voler***, les méthodes doivent afficher un message différent dans la console et ne rien retourner.
 3. Instancier **Espece** dans **fourmie** et ecrire une fonction **changeNbPatte** (non méthode) qui change le nbPattes du instance de Espece.
-```JavaScript
-//Appel de la fonction:
-changeNbPatte(gibbon,6);
-```
-4. Importer le module **lbbePrabi** (avec npm) puis afficher l'objet dans la console;
-5. Utiliser la méthode ***.creerServeur*** du **lbbePrabi** qui prend en argument un callback;
-6. Faire une requete HTTP sur le port 8080 de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost) et décrire ce qu'il se passe.
+
+*Testez votre script avec le code contenu dans le fichier scripts/tp1/test/nodejs_tp1.js*
+
+4. Importer le module **lbbePrabi** (avec npm) puis afficher l'objet dans la console.
+5. Utiliser LA méthode de **lbbePrabi** qui prend en argument un callback;
+6. Faire une requete HTTP sur le port ***lbbePrabi.port*** de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost) et décrire ce qu'il se passe. Quelle est le type MIME de la réponse ?
 7. Lire le fichier */etc/group*  avec **fs.readFile**, afficher l'erreur si il y en a une sinon afficher le résultat dans la console.
 
 
 
 ### JavaScript avec le navigateur
 
-//TODO
+1. Dans votre éditeur créer une page HTML5 vide. (ex: index.html)
+2. Ajouter la structure d'un [formulaire](https://www.w3schools.com/html/html_forms.asp) avec pour attributs **(action="http://localhost:8080" method="get")**
+3. Ajouter au formulaire un **input (type="text" name:"prenom")**
+4. Ajouter au formulaire un **input (type="text" name:"nom")**
+5. Ajouter au formulaire un **input (type="submit" value:"GO")**
+6. Lancer votre script NodeJS contenant **lbbePrabi**
+7. Ouvrez la page avec votre navigateur, remplissez les champs et appuyer sur le bouton '*GO*'.
+8. Importer votre script test.js dans votre page index.html
+
+
 
 #### Annexe:
 **installer un paquet distant avec npm**
@@ -37,5 +45,3 @@ npm install nom_du_paquet
 //javascript
 const http = require('http');
 ```
-
-Idée: faire des tests
