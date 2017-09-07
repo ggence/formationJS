@@ -557,30 +557,31 @@ pre.editor-colors .fold-marker:after {
 </style>
   </head>
   <body class='markdown-preview' data-use-github-style><h1 id="tp1-d-couverte-du-langage">TP1: Découverte du langage</h1>
+<p><em>TODO: corriger fautes d&#39;orthographe</em></p>
 <h3 id="javascript-avec-nodejs">JavaScript avec NodeJS</h3>
 <p><em>Dans un fichier test.js</em></p>
 <ol>
-<li>Ecrire une fonction <strong>puissance2</strong> qui affiche et retourne le nombre d&#39;entrée à la puissance 2 si le nombre est pair, sinon affiche et retourne le nombre entré en paramétre.</li>
-<li>Ecrire un constructeur de <strong>Espece</strong> qui a un attribut publique <strong><em>.nbPattes</em></strong> (number) et 2 méthodes publiques <strong><em>.marcher</em></strong> et <strong><em>.voler</em></strong>, les méthodes doivent afficher un message différent dans la console et ne rien retourner.</li>
-<li>Instancier <strong>Espece</strong> dans <strong>fourmie</strong> et ecrire une fonction <strong>changeNbPatte</strong> (non méthode) qui change le nbPattes du instance de Espece.</li>
+<li>Écrire une fonction <strong>puissance2</strong> qui affiche et retourne le paramètre (number) entré à la puissance 2 si le nombre est pair. Sinon affiche et retourne le paramètre sans modification.</li>
+<li>Écrire un constructeur de <strong>Espece</strong> qui a un attribut publique <strong><em>.nbPattes</em></strong> (number) et 2 méthodes publiques <strong><em>.marcher</em></strong> et <strong><em>.voler</em></strong>, les méthodes doivent afficher un message différent dans la console et ne rien retourner.</li>
+<li>Instancier <strong>Espece</strong> dans <strong>fourmie</strong> et écrire une fonction <strong>changeNbPatte</strong> (non méthode) qui change le nbPattes d&#39;une instance de <strong>Espece</strong>.</li>
 </ol>
-<p><em>Testez votre script avec le code contenu dans le fichier scripts/tp1/test/nodejs_tp1.js</em></p>
+<p><em>Tester votre script avec le code contenu dans le fichier <a href="https://github.com/ggence/formationJS/blob/master/scripts/tp1/test/nodejs_tp1.js">scripts/tp1/test/nodejs_tp1.js</a> </em></p>
 <ol>
-<li>Importer le module <strong>lbbePrabi</strong> (avec npm) puis afficher l&#39;objet dans la console.</li>
-<li>Utiliser LA méthode de <strong>lbbePrabi</strong> qui prend en argument un callback;</li>
-<li><p>Faire une requete HTTP sur le port <strong><em>lbbePrabi.port</em></strong> de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost).</p>
+<li>Importer le module <strong>lbbeprabi</strong> (avec npm) puis afficher l&#39;objet dans la console.</li>
+<li>Utiliser LA méthode de <strong>lbbeprabi</strong> qui prend en argument un callback;</li>
+<li><p>Faire une requête HTTP sur le port <strong><em>lbbeprabi.port</em></strong> de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost).</p>
 </li>
-<li><p>Lire le fichier <em>/etc/group</em>  avec <strong>fs.readFile</strong>, afficher l&#39;erreur si il y en a une sinon afficher le résultat dans la console.</p>
+<li><p>Lire le fichier <em>/etc/group</em>  avec <strong>fs.readFile</strong>. Afficher l&#39;erreur si il y en a une. Sinon afficher le résultat dans la console.</p>
 </li>
 </ol>
 <h3 id="javascript-avec-le-navigateur">JavaScript avec le navigateur</h3>
 <ol>
-<li>Dans votre éditeur créer une page HTML5 vide. (ex: index.html)</li>
+<li>Dans l&#39;éditeur créer une page HTML5 vide. (exemple: index.html)</li>
 <li>Ajouter la structure d&#39;un <a href="https://www.w3schools.com/html/html_forms.asp">formulaire</a> avec pour attributs <strong>(action=&quot;<a href="http://localhost:8080">http://localhost:8080</a>&quot; method=&quot;get&quot;)</strong></li>
 <li>Ajouter au formulaire un <strong>input (type=&quot;text&quot; name:&quot;prenom&quot;)</strong></li>
 <li>Ajouter au formulaire un <strong>input (type=&quot;text&quot; name:&quot;nom&quot;)</strong></li>
 <li>Ajouter au formulaire un <strong>input (type=&quot;submit&quot; value:&quot;GO&quot;)</strong></li>
-<li>Lancer votre script NodeJS contenant <strong>lbbePrabi</strong></li>
+<li>Lancer votre script NodeJS contenant <strong>lbbeprabi</strong></li>
 <li>Ouvrez la page avec votre navigateur, remplissez les champs et appuyer sur le bouton &#39;<em>GO</em>&#39;. Regarder l&#39;URL de votre page.</li>
 <li><p>Importer votre script test.js dans la page index.html</p>
 </li>
@@ -588,7 +589,10 @@ pre.editor-colors .fold-marker:after {
 </li>
 <li><p>Ajouter un titre <strong>h2 (id=&quot;titre&quot;)</strong> et modifiez son contenue de façon aléatoire à chaque fois que vous cliquez sur la page.</p>
 </li>
-<li><p>Ajouter le <a href="#q11">code Q11 en Annexe </a>à votre page index.html et corriger le pour requêter votre serveur NodeJS et afficher le contenue de la réponse dans <strong>#titre</strong></p>
+<li><p>Ajouter le <a href="#q11">code Q11 en Annexe </a>à votre page index.html et corriger le pour requêter votre serveur NodeJS. Puis afficher le contenue de la réponse dans <strong>#titre</strong>.</p>
+</li>
+<li><p>Dans votre dossier projet, vous avez maintenant un dossier node_modules.
+Importer dans votre script le fichier node_modules/lbbeprabi/dist/lbbeprabi.js dans votre page html.</p>
 </li>
 </ol>
 <h4 id="annexe-">Annexe:</h4>
