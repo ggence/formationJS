@@ -1,13 +1,22 @@
 # TP1: Découverte du langage
 
 ### JavaScript avec NodeJS
+
+
+
 1. Ecrire une fonction **puissance2** qui affiche et retourne le nombre d'entrée à la puissance 2 si le nombre est pair, sinon affiche et retourne le nombre entré en paramétre.
-2. Ecrire un constructeur de **Espece** qui a un attribut publique ***.nbPattes*** et 2 méthodes publiques ***.marcher*** et ***.voler***, les méthodes doivent afficher un message différent dans la console et ne rien retourner.
-3. Instancier **Espece** et ecrire une fonction (non méthode) qui change le nbPattes de l'instance.
+2. Ecrire un constructeur de **Espece** qui a un attribut publique ***.nbPattes*** (Number) et 2 méthodes publiques ***.marcher*** et ***.voler***, les méthodes doivent afficher un message différent dans la console et ne rien retourner.
+3. Instancier **Espece** dans **fourmie** et ecrire une fonction **changeNbPatte** (non méthode) qui change le nbPattes du instance de Espece.
+```JavaScript
+//Appel de la fonction:
+changeNbPatte(gibbon,6);
+```
 4. Importer le module **lbbePrabi** puis afficher l'objet dans la console;
 5. Utiliser la méthode ***.creerServeur*** du **lbbePrabi** qui prend en argument un callback;
-6. Faire une requete HTTP sur le port 8080 de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost)
+6. Faire une requete HTTP sur le port 8080 de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost) et décrire ce qu'il se passe.
 7. Lire le fichier */etc/group*  avec **fs.readFile**, afficher l'erreur si il y en a une sinon afficher le résultat dans la console.
+
+
 
 ### JavaScript avec le navigateur
 
