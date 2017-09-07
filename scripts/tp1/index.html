@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8" />
       <title>README</title>
-      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); overflow: auto; }
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
 .markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
 .markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
 .markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
@@ -25,8 +25,8 @@
 .markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
 .markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
 .markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
-.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); border-image: initial; background-color: rgb(58, 63, 75); }
-.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
 .markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
 .markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
 .markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
@@ -51,7 +51,7 @@
 .markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
 .markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
 .markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
-.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
 .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
 .markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
 .markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
@@ -65,7 +65,7 @@
 .markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
 .markdown-preview[data-use-github-style] table th { font-weight: bold; }
 .markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
-.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr { border-top: 1px solid rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
 .markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
 .markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
 .markdown-preview[data-use-github-style] .emoji { max-width: none; }
@@ -83,55 +83,99 @@
 .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
 .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
 .markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.0392157); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
 .markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
 .markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
 .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
-.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
 .markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
-.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
 .markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
 .markdown-preview[data-use-github-style] pre { word-wrap: normal; }
-.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
 .markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
-.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
 .markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
 .markdown-preview[data-use-github-style] code { color: inherit; }
 .markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
 .markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.pre.editor-colors .line.wlc::after,
+pre.editor-colors .line.wlc::after {
+  color: #777;
+}
+.pre.editor-colors .line.wle::after,
+pre.editor-colors .line.wle::after {
+  color: #c00;
+}
+.pre.editor-colors .wallaby-cov,
+pre.editor-colors .wallaby-cov {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+}
+.pre.editor-colors .wallaby-cov-1,
+pre.editor-colors .wallaby-cov-1 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #cccccc;
+}
+.pre.editor-colors .wallaby-cov-2,
+pre.editor-colors .wallaby-cov-2 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #62b455;
+}
+.pre.editor-colors .wallaby-cov-3,
+pre.editor-colors .wallaby-cov-3 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #d2a032;
+}
+.pre.editor-colors .wallaby-cov-4,
+pre.editor-colors .wallaby-cov-4 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #fe536a;
+}
+.pre.editor-colors .wallaby-cov-5,
+pre.editor-colors .wallaby-cov-5 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #ffa0a0;
+}
+.pre.editor-colors .highlight.uncovered .region,
+pre.editor-colors .highlight.uncovered .region {
+  border: #fe536a 1px solid;
+}
+
 .bracket-matcher .region {
   border-bottom: 1px dotted lime;
   position: absolute;
-}
-
-.conflict-resolved {
-  background: #31363f;
-}
-.conflict-ours {
-  background: rgba(0, 136, 255, 0.4);
-}
-.conflict-ours.cursor-line {
-  background: rgba(0, 136, 255, 0.3);
-}
-.conflict-theirs {
-  background: rgba(32, 182, 132, 0.4);
-}
-.conflict-theirs.cursor-line {
-  background: rgba(32, 182, 132, 0.3);
-}
-.conflict-base {
-  background: rgba(204, 133, 51, 0.4);
-}
-.conflict-base.cursor-line {
-  background: rgba(204, 133, 51, 0.3);
-}
-.conflict-dirty {
-  background: rgba(235, 221, 91, 0.4);
-}
-.conflict-dirty.cursor-line {
-  background: rgba(235, 221, 91, 0.3);
 }
 
 .spell-check-misspelling .region {
@@ -514,23 +558,46 @@ pre.editor-colors .fold-marker:after {
   </head>
   <body class='markdown-preview' data-use-github-style><h1 id="tp1-d-couverte-du-langage">TP1: Découverte du langage</h1>
 <h3 id="javascript-avec-nodejs">JavaScript avec NodeJS</h3>
+<p><em>Dans un fichier test.js</em></p>
 <ol>
 <li>Ecrire une fonction <strong>puissance2</strong> qui affiche et retourne le nombre d&#39;entrée à la puissance 2 si le nombre est pair, sinon affiche et retourne le nombre entré en paramétre.</li>
-<li>Ecrire un constructeur de <strong>Espece</strong> qui a un attribut publique <strong><em>.nbPattes</em></strong> et 2 méthodes publiques <strong><em>.marcher</em></strong> et <strong><em>.voler</em></strong>, les méthodes doivent afficher un message différent dans la console et ne rien retourner.</li>
-<li>Instancier <strong>Espece</strong> et ecrire une fonction (non méthode) qui change le nbPattes de l&#39;instance.</li>
-<li>Importer le module <strong>lbbePrabi</strong> puis afficher l&#39;objet dans la console;</li>
-<li>Utiliser la méthode <strong><em>.creerServeur</em></strong> du <strong>lbbePrabi</strong> qui prend en argument un callback;</li>
-<li>Faire une requete HTTP sur le port 8080 de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost)</li>
-<li>Lire le fichier <em>/etc/group</em>  avec <strong>fs.readFile</strong>, afficher l&#39;erreur si il y en a une sinon afficher le résultat dans la console.</li>
+<li>Ecrire un constructeur de <strong>Espece</strong> qui a un attribut publique <strong><em>.nbPattes</em></strong> (number) et 2 méthodes publiques <strong><em>.marcher</em></strong> et <strong><em>.voler</em></strong>, les méthodes doivent afficher un message différent dans la console et ne rien retourner.</li>
+<li>Instancier <strong>Espece</strong> dans <strong>fourmie</strong> et ecrire une fonction <strong>changeNbPatte</strong> (non méthode) qui change le nbPattes du instance de Espece.</li>
+</ol>
+<p><em>Testez votre script avec le code contenu dans le fichier scripts/tp1/test/nodejs_tp1.js</em></p>
+<ol>
+<li>Importer le module <strong>lbbePrabi</strong> (avec npm) puis afficher l&#39;objet dans la console.</li>
+<li>Utiliser LA méthode de <strong>lbbePrabi</strong> qui prend en argument un callback;</li>
+<li><p>Faire une requete HTTP sur le port <strong><em>lbbePrabi.port</em></strong> de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost).</p>
+</li>
+<li><p>Lire le fichier <em>/etc/group</em>  avec <strong>fs.readFile</strong>, afficher l&#39;erreur si il y en a une sinon afficher le résultat dans la console.</p>
+</li>
 </ol>
 <h3 id="javascript-avec-le-navigateur">JavaScript avec le navigateur</h3>
-<p>//TODO</p>
+<ol>
+<li>Dans votre éditeur créer une page HTML5 vide. (ex: index.html)</li>
+<li>Ajouter la structure d&#39;un <a href="https://www.w3schools.com/html/html_forms.asp">formulaire</a> avec pour attributs <strong>(action=&quot;<a href="http://localhost:8080">http://localhost:8080</a>&quot; method=&quot;get&quot;)</strong></li>
+<li>Ajouter au formulaire un <strong>input (type=&quot;text&quot; name:&quot;prenom&quot;)</strong></li>
+<li>Ajouter au formulaire un <strong>input (type=&quot;text&quot; name:&quot;nom&quot;)</strong></li>
+<li>Ajouter au formulaire un <strong>input (type=&quot;submit&quot; value:&quot;GO&quot;)</strong></li>
+<li>Lancer votre script NodeJS contenant <strong>lbbePrabi</strong></li>
+<li>Ouvrez la page avec votre navigateur, remplissez les champs et appuyer sur le bouton &#39;<em>GO</em>&#39;. Regarder l&#39;URL de votre page.</li>
+<li><p>Importer votre script test.js dans la page index.html</p>
+</li>
+<li><p>Afficher l&#39;outil de développement du navigateur (F12 || Ctrl + j) et dans test.js commentez toute les lignes NodeJS.</p>
+</li>
+<li><p>Ajouter un titre <strong>h2 (id=&quot;titre&quot;)</strong> et modifiez son contenue de façon aléatoire à chaque fois que vous cliquez sur la page.</p>
+</li>
+<li><p>Ajouter le <a href="#q11">code Q11 en Annexe </a>à votre page index.html et corriger le pour requêter votre serveur NodeJS et afficher le contenue de la réponse dans <strong>#titre</strong></p>
+</li>
+</ol>
 <h4 id="annexe-">Annexe:</h4>
 <p><strong>installer un paquet distant avec npm</strong></p>
-<pre class="editor-colors lang-shell"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--comment syntax--line syntax--number-sign syntax--shell"><span class="syntax--punctuation syntax--definition syntax--comment syntax--shell"><span>#</span></span><span>shell</span></span></span></div><div class="line"><span class="syntax--source syntax--shell"><span>npm&nbsp;install&nbsp;nom_du_paquet</span></span></div></pre>
+<pre class="editor-colors lang-shell"><div class="line"><span class="syntax--source syntax--shell"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--comment syntax--line syntax--number-sign syntax--shell"><span class="syntax--punctuation syntax--definition syntax--comment syntax--shell"><span>#</span></span><span>shell</span></span></span></div><div class="line"><span class="syntax--source syntax--shell"><span>npm&nbsp;install&nbsp;nom_du_paquet</span></span></div></pre>
 <p><em>NodeJs fournit plusieurs module par défault tel que http, net, process ou encore fs (voir <a href="https://nodejs.org/dist/latest-v6.x/docs/api/">doc</a>).</em>
 <em>Pour les utiliser nul besoin de npm</em></p>
 <p><strong>Utiliser un module dans un fichier NodeJs</strong></p>
 <pre class="editor-colors lang-javascript"><div class="line"><span class="syntax--source syntax--js"><span class="syntax--comment syntax--line syntax--double-slash syntax--js"><span class="syntax--punctuation syntax--definition syntax--comment syntax--js"><span>//</span></span><span>javascript</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span class="syntax--storage syntax--type syntax--const syntax--js"><span>const</span></span><span>&nbsp;</span><span class="syntax--constant syntax--other syntax--js"><span>http</span></span><span>&nbsp;</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--js"><span>=</span></span><span>&nbsp;</span><span class="syntax--meta syntax--function-call syntax--js"><span class="syntax--support syntax--function syntax--js"><span>require</span></span><span class="syntax--meta syntax--arguments syntax--js"><span class="syntax--punctuation syntax--definition syntax--arguments syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--string syntax--quoted syntax--single syntax--js"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js"><span>&#39;</span></span><span>http</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--js"><span>&#39;</span></span></span><span class="syntax--punctuation syntax--definition syntax--arguments syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div></pre>
-<p>Idée: faire des tests</p></body>
+<p><strong><a name="q11"></a> Code Q11</strong></p>
+<pre class="editor-colors lang-javascript"><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--source syntax--js"><span class="syntax--meta syntax--function syntax--js"><span class="syntax--storage syntax--type syntax--function syntax--js"><span>function</span></span><span>&nbsp;</span><span class="syntax--entity syntax--name syntax--function syntax--js"><span>loadXMLDoc</span></span><span class="syntax--meta syntax--parameters syntax--js"><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span>&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--function syntax--body syntax--begin syntax--bracket syntax--curly syntax--js"><span>{</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;</span><span class="syntax--storage syntax--type syntax--var syntax--js"><span>var</span></span><span>&nbsp;xmlhttp&nbsp;</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--js"><span>=</span></span><span>&nbsp;</span><span class="syntax--meta syntax--class syntax--instance syntax--constructor syntax--js"><span class="syntax--keyword syntax--operator syntax--new syntax--js"><span>new</span></span><span>&nbsp;</span><span class="syntax--entity syntax--name syntax--type syntax--instance syntax--js"><span>XMLHttpRequest</span></span></span><span class="syntax--meta syntax--brace syntax--round syntax--js"><span>(</span><span>)</span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;</span><span class="syntax--variable syntax--other syntax--object syntax--js"><span>xmlhttp</span></span><span class="syntax--meta syntax--function syntax--js"><span class="syntax--meta syntax--delimiter syntax--method syntax--period syntax--js"><span>.</span></span><span class="syntax--entity syntax--name syntax--function syntax--js"><span>onreadystatechange</span></span><span>&nbsp;</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--js"><span>=</span></span><span>&nbsp;</span><span class="syntax--storage syntax--type syntax--function syntax--js"><span>function</span></span><span class="syntax--meta syntax--parameters syntax--js"><span class="syntax--punctuation syntax--definition syntax--parameters syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--punctuation syntax--definition syntax--parameters syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span>&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--function syntax--body syntax--begin syntax--bracket syntax--curly syntax--js"><span>{</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--keyword syntax--control syntax--js"><span>if</span></span><span>&nbsp;</span><span class="syntax--meta syntax--brace syntax--round syntax--js"><span>(</span></span><span class="syntax--variable syntax--other syntax--object syntax--js"><span>xmlhttp</span></span><span class="syntax--meta syntax--delimiter syntax--property syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--variable syntax--property syntax--dom syntax--js"><span>readyState</span></span><span>&nbsp;</span><span class="syntax--keyword syntax--operator syntax--comparison syntax--js"><span>==</span></span><span>&nbsp;</span><span class="syntax--support syntax--class syntax--dom syntax--js"><span>XMLHttpRequest</span></span><span class="syntax--meta syntax--delimiter syntax--property syntax--period syntax--js"><span>.</span></span><span class="syntax--constant syntax--other syntax--property syntax--js"><span>DONE</span></span><span>&nbsp;</span><span class="syntax--meta syntax--brace syntax--round syntax--js"><span>)</span></span><span>&nbsp;</span><span class="syntax--meta syntax--brace syntax--curly syntax--js"><span>{</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--keyword syntax--control syntax--js"><span>if</span></span><span>&nbsp;</span><span class="syntax--meta syntax--brace syntax--round syntax--js"><span>(</span></span><span class="syntax--variable syntax--other syntax--object syntax--js"><span>xmlhttp</span></span><span class="syntax--meta syntax--delimiter syntax--property syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--variable syntax--property syntax--dom syntax--js"><span>status</span></span><span>&nbsp;</span><span class="syntax--keyword syntax--operator syntax--comparison syntax--js"><span>==</span></span><span>&nbsp;</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--js"><span>200</span></span><span class="syntax--meta syntax--brace syntax--round syntax--js"><span>)</span></span><span>&nbsp;</span><span class="syntax--meta syntax--brace syntax--curly syntax--js"><span>{</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--support syntax--variable syntax--dom syntax--js"><span>document</span></span><span class="syntax--meta syntax--method-call syntax--js"><span class="syntax--meta syntax--delimiter syntax--method syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--function syntax--dom syntax--js"><span>getElementById</span></span><span class="syntax--meta syntax--arguments syntax--js"><span class="syntax--punctuation syntax--definition syntax--arguments syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--string syntax--quoted syntax--single syntax--js"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js"><span>&#39;</span></span><span>toijijoi</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--js"><span>&#39;</span></span></span><span class="syntax--punctuation syntax--definition syntax--arguments syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span class="syntax--meta syntax--delimiter syntax--property syntax--period syntax--js"><span>.</span></span><span class="syntax--variable syntax--other syntax--property syntax--js"><span>innerHTML</span></span><span>&nbsp;</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--js"><span>=</span></span><span>&nbsp;</span><span class="syntax--variable syntax--other syntax--object syntax--js"><span>xmlhttp</span></span><span class="syntax--meta syntax--delimiter syntax--property syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--variable syntax--property syntax--dom syntax--js"><span>responseText</span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--brace syntax--curly syntax--js"><span>}</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--keyword syntax--control syntax--js"><span>else</span></span><span>&nbsp;</span><span class="syntax--keyword syntax--control syntax--js"><span>if</span></span><span>&nbsp;</span><span class="syntax--meta syntax--brace syntax--round syntax--js"><span>(</span></span><span class="syntax--variable syntax--other syntax--object syntax--js"><span>xmlhttp</span></span><span class="syntax--meta syntax--delimiter syntax--property syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--variable syntax--property syntax--dom syntax--js"><span>status</span></span><span>&nbsp;</span><span class="syntax--keyword syntax--operator syntax--comparison syntax--js"><span>==</span></span><span>&nbsp;</span><span class="syntax--constant syntax--numeric syntax--decimal syntax--js"><span>400</span></span><span class="syntax--meta syntax--brace syntax--round syntax--js"><span>)</span></span><span>&nbsp;</span><span class="syntax--meta syntax--brace syntax--curly syntax--js"><span>{</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--function-call syntax--js"><span class="syntax--entity syntax--name syntax--function syntax--js"><span>alert</span></span><span class="syntax--meta syntax--arguments syntax--js"><span class="syntax--punctuation syntax--definition syntax--arguments syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--string syntax--quoted syntax--single syntax--js"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js"><span>&#39;</span></span><span>There&nbsp;was&nbsp;an&nbsp;error&nbsp;400</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--js"><span>&#39;</span></span></span><span class="syntax--punctuation syntax--definition syntax--arguments syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--brace syntax--curly syntax--js"><span>}</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--keyword syntax--control syntax--js"><span>else</span></span><span>&nbsp;</span><span class="syntax--meta syntax--brace syntax--curly syntax--js"><span>{</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--function-call syntax--js"><span class="syntax--entity syntax--name syntax--function syntax--js"><span>alert</span></span><span class="syntax--meta syntax--arguments syntax--js"><span class="syntax--punctuation syntax--definition syntax--arguments syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--string syntax--quoted syntax--single syntax--js"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js"><span>&#39;</span></span><span>something&nbsp;else&nbsp;other&nbsp;than&nbsp;200&nbsp;was&nbsp;returned</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--js"><span>&#39;</span></span></span><span class="syntax--punctuation syntax--definition syntax--arguments syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--brace syntax--curly syntax--js"><span>}</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--brace syntax--curly syntax--js"><span>}</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;</span><span class="syntax--punctuation syntax--definition syntax--function syntax--body syntax--end syntax--bracket syntax--curly syntax--js"><span>}</span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;</span><span class="syntax--variable syntax--other syntax--object syntax--js"><span>xmlhttp</span></span><span class="syntax--meta syntax--method-call syntax--js"><span class="syntax--meta syntax--delimiter syntax--method syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--function syntax--dom syntax--js"><span>open</span></span><span class="syntax--meta syntax--arguments syntax--js"><span class="syntax--punctuation syntax--definition syntax--arguments syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--string syntax--quoted syntax--single syntax--js"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js"><span>&#39;</span></span><span>GET</span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--js"><span>&#39;</span></span></span><span class="syntax--meta syntax--delimiter syntax--object syntax--comma syntax--js"><span>,</span></span><span>&nbsp;</span><span class="syntax--string syntax--quoted syntax--single syntax--js"><span class="syntax--punctuation syntax--definition syntax--string syntax--begin syntax--js"><span>&#39;</span></span><span class="syntax--markup syntax--underline syntax--link syntax--http syntax--hyperlink"><span>http://google.fr</span></span><span class="syntax--punctuation syntax--definition syntax--string syntax--end syntax--js"><span>&#39;</span></span></span><span class="syntax--meta syntax--delimiter syntax--object syntax--comma syntax--js"><span>,</span></span><span>&nbsp;</span><span class="syntax--constant syntax--language syntax--boolean syntax--true syntax--js"><span>true</span></span><span class="syntax--punctuation syntax--definition syntax--arguments syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--js"><span>&nbsp;&nbsp;</span><span class="syntax--variable syntax--other syntax--object syntax--js"><span>xmlhttp</span></span><span class="syntax--meta syntax--method-call syntax--js"><span class="syntax--meta syntax--delimiter syntax--method syntax--period syntax--js"><span>.</span></span><span class="syntax--support syntax--function syntax--js"><span>send</span></span><span class="syntax--meta syntax--arguments syntax--js"><span class="syntax--punctuation syntax--definition syntax--arguments syntax--begin syntax--bracket syntax--round syntax--js"><span>(</span></span><span class="syntax--punctuation syntax--definition syntax--arguments syntax--end syntax--bracket syntax--round syntax--js"><span>)</span></span></span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--js"><span>;</span></span></span></div></pre></body>
 </html>

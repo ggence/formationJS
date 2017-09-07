@@ -12,7 +12,8 @@
 
 4. Importer le module **lbbePrabi** (avec npm) puis afficher l'objet dans la console.
 5. Utiliser LA méthode de **lbbePrabi** qui prend en argument un callback;
-6. Faire une requete HTTP sur le port ***lbbePrabi.port*** de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost) et décrire ce qu'il se passe. Quelle est le type MIME de la réponse ?
+6. Faire une requete HTTP sur le port ***lbbePrabi.port*** de sa machine. (adresse ip pour test en local: 127.0.0.1 ou localhost).
+
 7. Lire le fichier */etc/group*  avec **fs.readFile**, afficher l'erreur si il y en a une sinon afficher le résultat dans la console.
 
 
@@ -25,14 +26,21 @@
 4. Ajouter au formulaire un **input (type="text" name:"nom")**
 5. Ajouter au formulaire un **input (type="submit" value:"GO")**
 6. Lancer votre script NodeJS contenant **lbbePrabi**
-7. Ouvrez la page avec votre navigateur, remplissez les champs et appuyer sur le bouton '*GO*'.
-8. Importer votre script test.js dans votre page index.html
+7. Ouvrez la page avec votre navigateur, remplissez les champs et appuyer sur le bouton '*GO*'. Regarder l'URL de votre page.
+8. Importer votre script test.js dans la page index.html
 
+9. Afficher l'outil de développement du navigateur (F12 || Ctrl + j) et dans test.js commentez toute les lignes NodeJS.
+
+10. Ajouter un titre **h2 (id="titre")** et modifiez son contenue de façon aléatoire à chaque fois que vous cliquez sur la page.
+
+11. Ajouter le [code Q11 en Annexe ](#q11)à votre page index.html et corriger le pour requêter votre serveur NodeJS et afficher le contenue de la réponse dans **#titre**
 
 
 #### Annexe:
+
 **installer un paquet distant avec npm**
 ```shell
+
 #shell
 npm install nom_du_paquet
 ```
@@ -45,3 +53,27 @@ npm install nom_du_paquet
 //javascript
 const http = require('http');
 ```
+
+**<a name="q11"></a> Code Q11**
+```javascript
+
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+
+  xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+         if (xmlhttp.status == 200) {
+             document.getElementById('toijijoi').innerHTML = xmlhttp.responseText;
+         }
+         else if (xmlhttp.status == 400) {
+            alert('There was an error 400');
+         }
+         else {
+             alert('something else other than 200 was returned');
+         }
+      }
+  };
+
+  xmlhttp.open('GET', 'http://google.fr', true);
+  xmlhttp.send();
+  ```
