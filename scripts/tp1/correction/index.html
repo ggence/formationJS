@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<!-- <html onclick="change()"> -->
+    <head>
+        <meta charset="utf-8">
+        <title>test</title>
+    </head>
+    <body >
+        <form action="http://localhost:8080" method="get">
+          <input type="text" name="prenom">
+          <input type="text" name="nom">
+          <input type="submit" value="GO">
+        </form>
+        <h2 id="titre">Bonjour</h2>
+    </body>
+    <script src="./index.js" charset="utf-8"></script>
+    <!-- <script type="text/javascript">
+      function change() {
+        document.getElementById("titre").innerHTML = Math.random();
+      }
+    </script> -->
+
+    <!-- <script type="text/javascript">
+    function loadXMLDoc() {
+      var xmlhttp = new XMLHttpRequest();
+
+      xmlhttp.onreadystatechange = function() {
+          if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+             if (xmlhttp.status == 200) {
+                 document.getElementById('titre').innerHTML = xmlhttp.responseText;
+             }
+             else if (xmlhttp.status == 400) {
+                alert('There was an error 400');
+             }
+             else {
+                 alert('something else other than 200 was returned');
+             }
+          }
+      };
+
+      xmlhttp.open('GET', 'file:///home/gence/Projets/formationJS/scripts/tp1/correction/index.html?prenom=Guillaume&nom=+GENCE', true);
+      xmlhttp.send();
+
+    }
+
+    // loadXMLDoc();
+    </script> -->
+</html>
