@@ -11,11 +11,11 @@ remerciement = function (nom) {
   console.log("De rien, "+nom)
 };
 
-salutation(personne1,remerciement);
+salutation("bob",remerciement);
 
 // OU
 //Utilisation de la fonction avec callback avec une fonction anonyme
-var personne1 = "Bob";
-salutation(personne1,function (nom) {
-  console.log("De rien, "+nom)
-});
+// var personne1 = "Bob";
+// salutation(personne1,function (nom) {
+//   console.log("De rien, "+nom)
+// });
