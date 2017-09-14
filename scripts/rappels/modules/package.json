@@ -1,0 +1,17 @@
+{
+  "name": "star_wars_api_gui",
+  "version": "0.0.1",
+  "description": "",
+  "main": "starWarsRequest.js",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "rm -r doc; generate-md --layout github --input ./README.md --output ./doc; mkdir build; cp ./starWarsRequest.js ./build ; cp doc ./build ;cp ./package.json ./build ;tar zcvf swr.tar.gz ./build; rm -r buid;"
+  },
+  "author": "gouayave <guillaume.gence@gmail.com>",
+  "license": "ISC"
+}

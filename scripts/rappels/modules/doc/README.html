@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>StarWarsRequestPromises</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="starwarsrequestpromises"><a class="header-link" href="#starwarsrequestpromises"></a>StarWarsRequestPromises</h1>
+<p>Retourne quelques personnages de StarWars</p>
+<h2 id="usage"><a class="header-link" href="#usage"></a>Usage</h2>
+<p>Before use don&#39;t forget to install dependencies</p>
+<pre class="hljs"><code>npm <span class="hljs-keyword">install</span></code></pre><p>In your JavaScript file:</p>
+<pre class="hljs"><code><span class="hljs-keyword">const</span> swr = <span class="hljs-built_in">require</span>(<span class="hljs-string">'/path/to/starWarsRequest.js'</span>);
+
+swr.hommes()
+.then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) </span>{
+  <span class="hljs-comment">//Utilisation de response</span>
+},<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{
+  <span class="hljs-comment">//Utilisation de erreur</span>
+});</code></pre><h2 id="api"><a class="header-link" href="#api"></a>API</h2>
+<p><strong>swr.hommes()</strong>
+return <em>Promise</em> with array of men charaters names when success, else an error</p>
+<p><strong>swr.femmes()</strong>
+return <em>Promise</em> with array of women charaters names when success, else an error</p>
+<p><strong>swr.genreInconnue()</strong>
+return <em>Promise</em> with array of unknown gender charaters  names when success, else an error</p>
+<p><strong>swr.grands()</strong>
+return <em>Promise</em> with array of tall charaters names when success, else an error</p>
+<p><strong>swr.petits()</strong>
+return <em>Promise</em> with array of small charaters names when success, else an error</p>
+<p><strong>swr.changeNumPage(n)</strong>
+Change num page API</p>
+<p><strong>swr.recupPageCourrante()</strong>
+retun current num page</p>
+    </article>
+  </body>
+</html>
