@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "rm -r doc; generate-md --layout github --input ./README.md --output ./doc; mkdir build; cp ./starWarsRequest.js ./build ; cp doc ./build ;cp ./package.json ./build ;tar zcvf swr.tar.gz ./build; rm -r buid;"
+    "build": "rm -r doc; generate-md --layout github --input ./README.md --output ./doc; mkdir starWarsGuiLib; cp ./starWarsRequest.js ./starWarsGuiLib ; cp -r ./doc ./starWarsGuiLib/ ;cp ./package.json ./starWarsGuiLib ;tar zcvf swr.tar.gz ./starWarsGuiLib; rm -r starWarsGuiLib;"
   },
   "author": "gouayave <guillaume.gence@gmail.com>",
   "license": "ISC"
